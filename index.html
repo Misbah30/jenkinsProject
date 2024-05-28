@@ -1,106 +1,31 @@
-<!DOCTYPE html>
-<!--excited about my second homework site-->
-<html>
-<head>
-	<title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
-	<meta charset="utf-8">  
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" zoom="1.0">
-	<!--for making the website more responsive-->
-  	<meta http-equiv="X-UA-compatible" content="ie=">
-  	<!--for Favicon-->
-  	<link rel="shortcut icon" type="image/png" href="https://img.techpowerup.org/200517/prodipto.png">
-  	<!--for CSS-->
-  	<link rel="stylesheet" type="text/css" href="netflixstyles.css">
-	<!--link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/ -->
-</head>
-
-<body>
-	<header class="showcase">
-		<div class="showcase-top">
-			<p>Best of the Week</p>
-		</div>
-		 
-		<nav>
-			<a href="#" class="btn btn-m"> Sign in <i class="fas fa-chevron-right btn-icon"></i>
-			</a>
-		</nav>
-		<!--inside the following div we could write : style="background-image: url('https://img.techpowerup.org/200613/netflix-backgroung-image.jpg');"-->
-		<div class="showcase-content" >
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<h1>Unlimited movies, TV<br>shows and more...</h1>
-			<br><br>
-			<div class="search-box">
-			<input class="search-txt" type="text" name="box" placeholder="Email address."><a href="#" class="btn  btn-x1">TRY IT NOW<i class="fas fa-chevron-right btn-icon"></i>
-			</a>			
-			</div>
-		</div>
-				
-		<div>
-			<h3>Ready to watch?  Enter your Email to create or restart your membership. </h3>
-			<br><br>				
-		</div>
-	</header>
-			   
-
-	<div class="enjoy-tv">
-		<div>
-			<h2> Enjoy on your TV. </h2>
-			<p>Watch on your smart-TV, PlayStation,<br>XBox, ChromeCast, AppleTV, blu-<br>ray players and more.</p>
-		</div>
-		<img src="https://t.ctcdn.com.br/hxMIOa4911i56IHic6sETQtHCBg=/1270x714/smart/i541471.jpeg">
-	</div>
-
-	<div class="Watch-offline">
-		<div>
-			<h2>Download your shows<br>to watch offline.</h2>
-			<p>Save your favourites easily and<br>always have something to watch.</p>
-		</div>
-		<img src="https://play-lh.googleusercontent.com/4DOuvVtWKp_dcvPvueS-g3tUQw08AtSgumH1b7iNlX4YkcwUyBcAsKWIljaDjxT3hKc=w526-h296-rw">
-	</div>
-
-	<div class="watch-everywhere">
-		<h2>Watch Everywhere.</h2>
-		<p>Stream unlimited movies and TV<br>shows on your phon, tablet, laptop,<br>and TV.</p>
-	</div>
-
-	<div class="ask-question">
-		<h1>Frequently Asked Questions...</h1>
-		<button>What is Netfiix?</button><br><br>
-		<button>How much does Netflix costs?</button><br><br>
-		<button>Where can I watch?</button><br><br>
-		<button>How do I cancel?</button><br><br>
-		<button>What can I watch on netflix?</button>
-	</div>
-
-	<div>
-		<input class="search-txt" type="text" name="box" placeholder="Email address"><a href="#" class="btn btn-x1">TRY IT NOW><i class="fas fa-chevron-right btn-icon"></i></a>
-	</div>
-	<br>
-
-	<div>
-		<h3>Ready to watch? Enter your email to create or restart your membership.</h3><br><br>
-	</div>
-
-	<footer class="page-down">
-			<p style="font-weight: 600;"><a href="#">Quetions? Call 000-800-040-1842</a></p>
-			<p style="font-weight: 600;"><a href="#">FAQ</a></p>
-			<p style="font-weight: 600;"><a href="#">Investor Relations.</a></p>
-			<p style="font-weight: 600;"><a href="#">Privacy.</a></p>
-			<p style="font-weight: 600;"><a href="#">Speed Test.</a></p>
-			<p><a href="#">Netflix India</a></p>	
-			<p><a href="#">Help Center.</a></p>
-			<p><a href="#">Jobs.</a></p>
-			<p><a href="#">Cookie Preference.</a></p>
-			<p><a href="#">Legal Notices.</a></p>
-			<p><a href="#">Account.</a></p>
-			<p><a href="#">Way to Watch.</a></p>
-			<p><a href="#">Corporate Information.</a></p>
-			<p><a href="#">Netflix Originals.</a></p>
-			<p><a href="#">Media Centre.</a></p>	
-			<p><a href="#">Terms of Use.</a></p>
-			<p><a href="#">Contact us</a></p>
-	</footer>
-</body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn">Spin</button>
+        <img src="data:image/jpeg;base64,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" alt="spinner arrow" />
+      </div>
+      <div id="final-value">
+        <p>Click On The Spin Button To Start</p>
+      </div>
+    </div>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="wheel.js"></script>
+  </body>
 </html>
-<!--end of my shitty priject-->
-
